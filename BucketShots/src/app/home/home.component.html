@@ -1,12 +1,10 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <span>Third Line</span>
-      <span class="example-spacer"></span>
-      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
-    </mat-toolbar-row>
-  </mat-toolbar>
-
-  <div>
-      <img src='https://cdn.photographylife.com/wp-content/uploads/2013/04/Nikon-D800E-Sample-19.jpg'>
-  </div>
+<div 
+  fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-center">
+  <ng-container *ngFor="let _ of [1,2,3]">
+    <mat-card fxFlex="auto calc(33.3% - 27px)">
+        <mat-card-title>Asian Lantern Festival</mat-card-title>
+        <img mat-card-image src="../../assets/AsainLanternFestival-6899.jpg"/>
+        <mat-card-content>Cleveland, Ohio</mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>
