@@ -3,6 +3,7 @@ export class Shot {
     private name: string;
     private location: string; // Should eventually be an actual location in a map API
     private imageUrl: string; // Will eventually connect to a database which points to S3
+    private likes = 0;
     private id: number;
 
     /**
@@ -12,7 +13,6 @@ export class Shot {
         this.name = name;
         this.location = location;
         this.imageUrl = imageUrl;
-        // this.user = user;
         this.id = Math.random(); // Eventually this will be set randomly and check to make sure there are no other similar IDs
     }
 

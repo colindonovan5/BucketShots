@@ -8,7 +8,7 @@ import { Shot } from '../Shot';
 })
 export class ShotPreviewComponent implements OnInit {
 
-  shot: Shot = new Shot('Test', 'Cleveland, OH', '../../assets/AsainLanternFestival-6899.jpg');
+  shot: Shot = new Shot('Test', 'Cleveland, OH', '../../assets/AsainLanternFestival-6899.png');
 
   constructor() {
 
