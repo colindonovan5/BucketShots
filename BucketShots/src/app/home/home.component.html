@@ -1,3 +1,24 @@
-<div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-center">
-  <app-shot-preview></app-shot-preview>
+<div  *ngFor="let l of [1,2,3,4,5,6,7,8,9,4,5,6,7,3,636,4,434,63,36]"
+    fxLayout
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    fxLayoutWrap="wrap">
+    <div class="widget" fxFlex="33%">
+      <div fxLayout="row wrap" fxFlexOffset="1%" fxLayoutAlign="flex-center">
+        <app-shot-preview></app-shot-preview>
+        <br>
+      </div>
+    </div>
+    <div class="widget" fxFlex="33%">
+      <div fxLayout="row wrap" fxFlexOffset="1%" fxLayoutAlign="flex-center">
+        <app-shot-preview></app-shot-preview>
+        <br>
+      </div>
+    </div>
+    <div class="widget" fxFlex="33%">
+      <div fxLayout="row wrap" fxFlexOffset="1%" fxLayoutAlign="flex-center">
+          <app-shot-preview></app-shot-preview>
+          <br>
+      </div>
+    </div>
 </div>

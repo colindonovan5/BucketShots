@@ -1,5 +1,15 @@
-<mat-card fxFlex="auto calc(33.3% - 27px)">
-    <mat-card-title>{{ shot.getName() }}</mat-card-title>
+<mat-card fxFlex="auto calc(33% - 27px)">
+    <mat-card-title class="photo__title">
+        {{ shot.getName() }} 
+        <div class="photo__photographer">Photographer: weenis</div>
+    </mat-card-title>
+    
     <img mat-card-image src="{{ shot.getImageUrl() }}"/>
-    <mat-card-content>{{ shot.getLocation() }}</mat-card-content>
+    <mat-card-content fxLayoutAlign="center center" class="photo__location">
+        {{ shot.getLocation() }}
+
+
+    </mat-card-content>
+    <mat-card-content>
+    </mat-card-content>
 </mat-card>
