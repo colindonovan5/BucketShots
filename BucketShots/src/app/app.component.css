@@ -14,6 +14,7 @@
     grid-template-columns: 1fr 1fr 0.25fr;
     grid-template-rows: 1fr;
     box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    background-color: rgb(255, 255, 255);
     height: 4rem;
     margin: 0;
     align-items: center;
@@ -32,6 +33,7 @@
   .center__text {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    color: rgb(0, 0, 0);
     align-content: center;
   }
   
